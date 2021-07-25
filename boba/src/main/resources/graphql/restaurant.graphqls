@@ -1,0 +1,17 @@
+type Restaurant {
+    id: ID!
+    name: String
+    location: String
+}
+
+extend type Query {
+    findAllRestaurants: [Restaurant]!
+    getRestaurantVisits(name: String): Int
+}
+
+extend type Mutation {
+    createRestaurant(
+        name: String
+        location: String
+    ): Restaurant
+}
