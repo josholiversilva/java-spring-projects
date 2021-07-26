@@ -26,7 +26,7 @@ public class Mutation implements GraphQLMutationResolver {
         drink.setName(name);
         drink.setSweetness(sweetness);
         drink.setRating(rating);
-        drink.setRestaurant_id(restaurant_id);
+        drink.setRestaurant(new Restaurant(restaurant_id));
         drinkRepository.save(drink);
 
         return drink;

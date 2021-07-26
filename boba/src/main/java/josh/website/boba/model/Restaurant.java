@@ -19,4 +19,9 @@ public class Restaurant {
     private Integer id;
     private String name;
     private String location;
+
+    public Restaurant(Integer restaurant_id) {
+        this.id = restaurant_id;
+    }
+
 }

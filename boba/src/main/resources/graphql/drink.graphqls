@@ -3,19 +3,5 @@ type Drink {
     name: String!
     sweetness: Int!
     rating: Float!
-    restaurant_id: Int!
-}
-
-type Query {
-    findAllDrinks: [Drink]!
-    findDrink(id: Int): Drink
-}
-
-type Mutation {
-    createDrink(
-        name: String,
-        sweetness: Int,
-        rating: Float,
-        restaurant_id: Int
-    ) : Drink
+    restaurant: Restaurant!
 }

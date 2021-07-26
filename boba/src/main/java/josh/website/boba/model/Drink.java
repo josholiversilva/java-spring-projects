@@ -27,6 +27,7 @@ public class Drink {
     @Column(name="rating", nullable = false)
     private Float rating;
 
-    @Column(name="restaurantid", nullable = false)
-    private Integer restaurant_id;
+    @ManyToOne
+    @JoinColumn(name="restaurantid", nullable = false, updatable = false)
+    private Restaurant restaurant;
 }

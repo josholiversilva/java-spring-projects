@@ -1,0 +1,9 @@
+type Query {
+    # Drinks
+    findAllDrinks: [Drink]!
+    findDrink(id: Int): Drink
+
+    # Restaurants
+    findAllRestaurants: [Restaurant]!
+    getRestaurantVisits(name: String): Int
+}
